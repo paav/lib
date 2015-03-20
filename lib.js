@@ -1,4 +1,6 @@
-paav.lib = (function($) {
+define(['jquery'], function($) {
+  'use strict';
+
   function addClassIf(htmlString, className, callback) {
     if (!callback())
       return htmlString;
@@ -23,5 +25,5 @@ paav.lib = (function($) {
     addClassIf: addClassIf,
     strPad: strPad,
   };
-})(jQuery);
+});
 
