@@ -1,3 +1,5 @@
+var paav = paav || {};
+
 paav.lib = (function() {
   function strPad(string, length, pad) {
     string += '';
