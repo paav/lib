@@ -1,15 +1,4 @@
-paav.lib = (function($) {
-  function addClassIf(htmlString, className, callback) {
-    if (!callback())
-      return htmlString;
-
-    return $(htmlString)
-      .addClass(className)
-      .wrap('<div></div>')
-      .parent()
-      .html();
-  }
-
+paav.lib = (function() {
   function strPad(string, length, pad) {
     string += '';
 
@@ -20,7 +9,6 @@ paav.lib = (function($) {
   }
 
   return {
-    addClassIf: addClassIf,
     strPad: strPad,
   };
 })(jQuery);
