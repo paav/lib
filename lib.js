@@ -8,8 +8,13 @@ paav.lib = (function() {
     return string;
   }
 
+  function isUndef(value) {
+    return typeof value === 'undefined'; 
+  }
+
   return {
     strPad: strPad,
+    isUndef: isUndef,
   };
-})(jQuery);
+})();
 
